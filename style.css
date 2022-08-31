@@ -9,15 +9,106 @@ body {
   line-height: 1.6;
 }
 
-h1,p{
-    text-align: center;
-    margin-top: 50px;
-    color: white;
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 5px;
+  background: #f4f4f4;
+  margin: 5px 0;
+}
+
+header {
+  background: #f4f4f4;
+  padding: 1rem;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  /* justify-content: center; */
+}
+.anim{
+  align-self: center;
+  display: flex;
+  justify-content: end;
+}
+.content,
+.anim {
+  /* margin: auto; */
+  width: 500px;
+  overflow: auto;
+  padding: 3rem 2rem;
+
+}
+
+.container {
+  margin: auto;
+  width: 500px;
+  overflow: auto;
+  padding: 3rem 2rem;
+}
+
+#my-form {
+  padding: 2rem;
+  background: #f4f4f4;
+}
+
+#my-form label {
+  display: block;
+}
+
+#my-form input[type='text'] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border: 0;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.btn:hover {
+  background: #444;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.error {
+  background: orangered;
+  color: #fff;
+  padding: 5px;
+  margin: 5px;
+}
+
+footer {
+  display: block;
+  background: #f4f4f4;
+  text-align: center;
 
 
 }
-body {
- background-image: url("./image/javascript-illustration.png");
-  background-repeat: no-repeat; 
-  background-size: cover;
+
+@media (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .anim{
+    display: flex;
+  justify-content:center;
+  }
 }

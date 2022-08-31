@@ -6,9 +6,9 @@ console.log("Hello");
 console.warn("This is warning");
 console.error("This is alert");
 
-alert("This is alert");
+alert("Welcome to Javascript course");
 
-//Variales
+//Variables
 
 let age2 = 52;
 
